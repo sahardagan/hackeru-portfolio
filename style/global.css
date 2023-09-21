@@ -80,10 +80,6 @@ body {
     color: var(--third-color);
 }
 
-.hamburger {
-    display: none;
-
-}
 
 /* HEADER */
 
@@ -546,15 +542,6 @@ body {
         display: none;
     }
 
-    .hamburger {
-        display: none;
-        display: block;
-        width: 39px;
-        height: 28px;
-        color: #1AE0EC;
-        font-size: 25px;
-    }
-
     .nav-items {
         display: none;
         margin-top: 92px;
@@ -564,15 +551,6 @@ body {
 
     .nav-item:hover {}
 
-    .hamburger:hover {
-        display: none;
-    }
-
-    .hamburger:hover+.nav-items {
-        display: block;
-        color: var(--third-color);
-
-    }
 
 
 
