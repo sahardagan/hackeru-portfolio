@@ -80,6 +80,10 @@ body {
     color: var(--third-color);
 }
 
+.sidebar-list {
+    display: none;
+}
+
 
 /* HEADER */
 
@@ -553,11 +557,48 @@ body {
 
 
 
+    .nav-burger {
+        display: flex;
+        flex-direction: column;
+        margin-right: 5px;
+        transition: all 0.5s ease;
+    }
+
+    .nav-burger.open {
+        transform: rotate(90deg);
+    }
 
     .nav-burger .line {
-        width: 100px;
-        color: var(--third-color);
-        height: 3px;
+        background-color: var(--third-color);
+        width: 30px;
+        margin: 3px;
+        height: 4px;
+    }
+
+
+
+
+    .sidebar-list {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        background-color: #1da1a8e0;
+        position: fixed;
+        right: -100%;
+        top: 80px;
+        transition: all 0.5s ease;
+    }
+
+    .sidebar-list.open {
+        right: 0;
+    }
+
+    .sidebar-item {
+        margin: 10px;
+        color: #fff;
+        font-size: 24px;
     }
 
     /* projects */

@@ -20,11 +20,17 @@
             <li class="nav-item">שירותים</li>
             <li class="nav-item">צור קשר</li>
         </ul>
-        <!-- <div class="nav-burger">
+        <div class="nav-burger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
-        </div> -->
+        </div>
+        <ul class="sidebar-list">
+            <li class="sidebar-item">ראשי</li>
+            <li class="sidebar-item">אודות</li>
+            <li class="sidebar-item">שירותים</li>
+            <li class="sidebar-item">צור קשר</li>
+        </ul>
     </nav>
     <header class="main-header-container">
         <div class="header-title">תיק עבודות</div>
@@ -251,6 +257,15 @@
         <p class="left-copyright">gal levi</p>
         <p class="right-copyright">כל הזכויות שמורות</p>
     </section>
+    <script>
+        const navBurger = document.querySelector(".nav-burger");
+        const sideBar = document.querySelector(".sidebar-list");
+
+        navBurger.addEventListener("click", function () {
+            navBurger.classList.toggle("open");
+            sideBar.classList.toggle("open");
+        })
+    </script>
 </body>
 
 </html>
