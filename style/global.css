@@ -36,6 +36,7 @@ body {
 /* NAV */
 
 .nav-container {
+    z-index: 1;
     background-color: var(--primary-color);
     width: 100%;
     border-top: 3px solid var(--third-color);
@@ -83,7 +84,7 @@ body {
     color: #000;
 }
 
-.nav-item:hover {
+.nav-item a:hover {
     color: var(--third-color);
 }
 
@@ -307,7 +308,6 @@ body {
     bottom: -191px;
 }
 
-.contact-container {}
 
 .contact-container {
     padding: 161px 304px 152px 0px;
@@ -346,8 +346,11 @@ body {
 
 .label-text {
     color: var(--primary-color);
-    width: 58px;
+    width: 74px;
     height: 24px;
+    display: flex;
+    justify-content: end;
+    margin-top: 13px
 }
 
 .text-area {
@@ -504,8 +507,8 @@ body {
     }
 
     .image-contact {
-        bottom: 21px;
-        left: -200px;
+        bottom: -6px;
+        left: -181px;
         width: 200px;
         height: 160px;
     }
@@ -689,6 +692,8 @@ body {
         margin-top: 30px;
         width: 130px;
     }
+
+
 
 
 }
