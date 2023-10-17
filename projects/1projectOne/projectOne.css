@@ -9,12 +9,12 @@ body {
   overflow-x: hidden;
 }
 
-.project-five-container {
+.project-one-container {
   width: 100vw;
   height: 1600px;
   background-color: #E5EEFF;
 }
-.project-five-container .grid-container {
+.project-one-container .grid-container {
   width: 872.2px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -24,59 +24,59 @@ body {
   padding-top: 208px;
   grid-template-areas: "box1 box1 img2 img1" "box1 box1 img4 img3" "img8 img7 img6 img5" "img10 img9 box2 box2" "img12 img11 box2 box2" "img14 img13 box2 box2";
 }
-.project-five-container .grid-container img {
+.project-one-container .grid-container img {
   width: 208px;
   height: 190px;
 }
-.project-five-container .grid-container .img1 {
+.project-one-container .grid-container .img1 {
   grid-area: img1;
 }
-.project-five-container .grid-container .img2 {
+.project-one-container .grid-container .img2 {
   grid-area: img2;
 }
-.project-five-container .grid-container .blue-area {
+.project-one-container .grid-container .blue-area {
   grid-area: box1;
 }
-.project-five-container .grid-container .img3 {
+.project-one-container .grid-container .img3 {
   grid-area: img3;
 }
-.project-five-container .grid-container .img4 {
+.project-one-container .grid-container .img4 {
   grid-area: img4;
 }
-.project-five-container .grid-container .img5 {
+.project-one-container .grid-container .img5 {
   grid-area: img5;
 }
-.project-five-container .grid-container .img6 {
+.project-one-container .grid-container .img6 {
   grid-area: img6;
 }
-.project-five-container .grid-container .img7 {
+.project-one-container .grid-container .img7 {
   grid-area: img7;
 }
-.project-five-container .grid-container .img8 {
+.project-one-container .grid-container .img8 {
   grid-area: img8;
 }
-.project-five-container .grid-container .purple-area {
+.project-one-container .grid-container .purple-area {
   grid-area: box2;
 }
-.project-five-container .grid-container .img9 {
+.project-one-container .grid-container .img9 {
   grid-area: img9;
 }
-.project-five-container .grid-container .img10 {
+.project-one-container .grid-container .img10 {
   grid-area: img10;
 }
-.project-five-container .grid-container .img11 {
+.project-one-container .grid-container .img11 {
   grid-area: img11;
 }
-.project-five-container .grid-container .img12 {
+.project-one-container .grid-container .img12 {
   grid-area: img12;
 }
-.project-five-container .grid-container .img13 {
+.project-one-container .grid-container .img13 {
   grid-area: img13;
 }
-.project-five-container .grid-container .img14 {
+.project-one-container .grid-container .img14 {
   grid-area: img14;
 }
-.project-five-container .grid-container .blue-area {
+.project-one-container .grid-container .blue-area {
   width: 429px;
   height: 393.5px;
   border: 1px solid black;
@@ -84,14 +84,14 @@ body {
   text-align: center;
   padding-top: 136.5px;
 }
-.project-five-container .grid-container .blue-area h1 {
+.project-one-container .grid-container .blue-area h1 {
   color: #0EE1DA;
   font-family: assistant-bold;
   font-size: 2.7rem;
   margin-bottom: 14px;
 }
-.project-five-container .grid-container .blue-area p,
-.project-five-container .grid-container .purple-area p {
+.project-one-container .grid-container .blue-area p,
+.project-one-container .grid-container .purple-area p {
   width: 350px;
   margin: 0 auto;
   color: #F9F9F9;
@@ -100,52 +100,52 @@ body {
   text-align: center;
   display: block;
 }
-.project-five-container .grid-container .purple-area {
+.project-one-container .grid-container .purple-area {
   width: 429px;
   height: 596.4px;
   border: 1px solid black;
   background-color: #8E097C;
 }
-.project-five-container .grid-container .purple-area h1 {
+.project-one-container .grid-container .purple-area h1 {
   color: #FFFFFF;
   font-family: assistant-bold;
   font-size: 1.53rem;
   text-align: center;
   padding-top: 44px;
 }
-.project-five-container .grid-container .purple-area p {
+.project-one-container .grid-container .purple-area p {
   padding-top: 16px;
   padding-bottom: 14px;
 }
-.project-five-container .grid-container .purple-area form {
+.project-one-container .grid-container .purple-area form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.project-five-container .grid-container .purple-area form .label-input {
+.project-one-container .grid-container .purple-area form .label-input {
   display: flex;
   flex-direction: column;
 }
-.project-five-container .grid-container .purple-area form .label-input label {
+.project-one-container .grid-container .purple-area form .label-input label {
   font-size: 0.7rem;
   font-family: assistant-bold;
   color: #0EE1DA;
   padding-top: 21px;
   margin-bottom: 3.5px;
 }
-.project-five-container .grid-container .purple-area form .label-input input {
+.project-one-container .grid-container .purple-area form .label-input input {
   width: 350px;
   height: 42px;
   background-color: #F6F6F6;
   border: none;
   border-bottom: 3.5px solid #0EE1DA;
 }
-.project-five-container .grid-container .purple-area form .label-input .text-area {
+.project-one-container .grid-container .purple-area form .label-input .text-area {
   width: 350px;
   height: 120px;
   margin-bottom: 14px;
 }
-.project-five-container .grid-container .purple-area form input[type=submit] {
+.project-one-container .grid-container .purple-area form input[type=submit] {
   width: 350px;
   height: 42px;
   background-color: #0EE1DA;
@@ -154,16 +154,16 @@ body {
   font-size: 1.05rem;
   border: none;
 }
-.project-five-container .grid-container .purple-area form input[type=submit]:hover {
+.project-one-container .grid-container .purple-area form input[type=submit]:hover {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1607843137);
   cursor: pointer;
 }
 
 @media (max-width: 768px) {
-  .project-five-container {
+  .project-one-container {
     height: 2150px;
   }
-  .project-five-container .grid-container {
+  .project-one-container .grid-container {
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -174,52 +174,52 @@ body {
     gap: 10px;
     grid-template-areas: "box1 box1 " "box1 box1" "img2 img1" "img4 img3" "img8 img7" "img6 img5" "box2 box2" "box2 box2" "box2 box2" "img10 img9" "img12 img11" "img14 img13";
   }
-  .project-five-container .grid-container .blue-area {
+  .project-one-container .grid-container .blue-area {
     width: 100vw;
     height: 340px;
     padding-top: 100px;
   }
-  .project-five-container .grid-container .blue-area h1 {
+  .project-one-container .grid-container .blue-area h1 {
     font-size: 2.25rem;
   }
-  .project-five-container .grid-container .blue-area p,
-  .project-five-container .grid-container .purple-area p {
+  .project-one-container .grid-container .blue-area p,
+  .project-one-container .grid-container .purple-area p {
     width: 300px;
     margin: 0 auto;
   }
-  .project-five-container .grid-container img {
+  .project-one-container .grid-container img {
     width: 45vw;
     height: 170px;
   }
-  .project-five-container .grid-container .purple-area {
+  .project-one-container .grid-container .purple-area {
     width: 92vw;
     height: 518px;
     margin: 0 auto;
   }
-  .project-five-container .grid-container .purple-area h1 {
+  .project-one-container .grid-container .purple-area h1 {
     font-size: 1.563rem;
   }
-  .project-five-container .grid-container .img2,
-  .project-five-container .grid-container .img4,
-  .project-five-container .grid-container .img8,
-  .project-five-container .grid-container .img6,
-  .project-five-container .grid-container .img10,
-  .project-five-container .grid-container .img12,
-  .project-five-container .grid-container .img14 {
+  .project-one-container .grid-container .img2,
+  .project-one-container .grid-container .img4,
+  .project-one-container .grid-container .img8,
+  .project-one-container .grid-container .img6,
+  .project-one-container .grid-container .img10,
+  .project-one-container .grid-container .img12,
+  .project-one-container .grid-container .img14 {
     margin-right: 4vw;
   }
-  .project-five-container .grid-container .label-input label {
+  .project-one-container .grid-container .label-input label {
     font-size: 0.438rem;
   }
-  .project-five-container .grid-container .label-input input {
+  .project-one-container .grid-container .label-input input {
     width: 277px;
     height: 33px;
   }
-  .project-five-container .grid-container .label-input .text-area {
+  .project-one-container .grid-container .label-input .text-area {
     width: 277px;
     height: 95px;
   }
-  .project-five-container .grid-container input[type=submit] {
+  .project-one-container .grid-container input[type=submit] {
     width: 277px;
     height: 33px;
     font-size: 0.75rem;

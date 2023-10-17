@@ -22,28 +22,54 @@
             width: 100vw !important;
 
         }
+
+        @media (max-width: 768px) {
+            button {
+                margin: 30px;
+            }
+
+            .main-title {
+                font-size: 50px;
+            }
+
+            .substitle {
+                font-size: 30px;
+            }
+
+            .content {
+                font-size: 20px;
+            }
+
+            form {
+                align-items: baseline;
+                margin-right: 40px !important;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="container-fluid project-two-container">
-        <div class="">
-            <p class="h1">h1. Bootstrap heading</p>
-            <p class="h2">h2. Bootstrap heading</p>
-            <p class="h3">h3. Bootstrap heading</p>
-        </div>
+        <p class="display-1 text-white main-title">Here & Now</p>
+        <p class="h2 text-center text-white substitle">רצינו להזמין אתכם להנות משלל מתנות</p>
+        <p class="h4 text-center text-white content">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לפרומי בלוף
+            קינץ תתיח
+            לרעח. לת
+            צשחמי צש בליא,
+            מנסוטו צמלח לביקו
+            ננבי, צמוקו בלוקריה.</p>
 
-        <div>
-            <div>
-                <label for=""></label>
-                <input type="text" name="" id="">
+        <form class="row flex-lg-row flex-column-reverse">
+            <button type="submit" class="btn btn-primary btn-sm col-lg-4 ">Update me</button>
+            <div class="col-lg-4 text-start">
+                <label for="email" class="form-label text-white">Email</label>
+                <input type="email" class="form-control" id="email">
             </div>
-            <div>
-                <label for=""></label>
-                <input type="text" name="" id="">
+            <div class="col-lg-4">
+                <label for="name" class="form-label text-white">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name">
             </div>
-            <button>sdfds</button>
-        </div>
+        </form>
     </div>
 
 </body>
