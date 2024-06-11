@@ -114,6 +114,8 @@ body {
     font-size: 80px;
     margin-bottom: 4px;
     font-weight: 900;
+    opacity: 1;
+    transition: opacity 2s ease-in-out
 }
 
 .header-text {
@@ -165,9 +167,11 @@ body {
 }
 
 .about-text {
-    font-size: 20px;
+    direction: rtl;
+    font-weight: bold;
+    font-size: 28px;
     color: var(--forth-color);
-    max-width: 576px;
+    max-width: 859px;
     text-align: center;
     padding: 13px 10px 6px 10px;
 }

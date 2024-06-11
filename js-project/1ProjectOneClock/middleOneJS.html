@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>middle one</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Heebo', sans-serif;
+        }
+
+        :root {
+            --primary-color: #fff;
+            --secondary-color: #F6F6F6;
+            --third-color: #1AE0EC;
+            --forth-color: #3A3A3A;
+        }
+
+        html {
+            width: 100vw;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            overflow-x: hidden;
+        }
+
+
+
+        /* NAV */
+
+        .nav-container {
+            z-index: 1;
+            background-color: var(--primary-color);
+            width: 100%;
+            border-top: 3px solid var(--third-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10px;
+            height: 65px;
+            position: sticky;
+            top: 0;
+        }
+
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-image {
+            width: 62px;
+            height: 62px;
+            margin-right: 17px;
+            padding: 10px 0 8px 0;
+        }
+
+        .logo-title {
+            font-style: italic;
+        }
+
+        .nav-items {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-item {
+            font-size: 25px;
+            margin: 0 37px;
+            min-width: fit-content;
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+
+        .nav-item a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .nav-item:hover {
+            color: var(--third-color);
+        }
+
+        .sidebar-list {
+            display: none;
+        }
+
+        .nav-burger {
+            display: none;
+        }
+
+
+        /* HEADER */
+
+        .main-header-container {
+            background: #13E8F163;
+            width: 100%;
+            height: 461px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-title {
+            color: var(--forth-color);
+            font-size: 80px;
+            margin-bottom: 4px;
+            font-weight: 900;
+        }
+
+        .header-text {
+            max-width: 844px;
+            color: var(--forth-color);
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+            padding: 0 15px;
+        }
+
+        .header-buttons {
+            margin: 30px;
+        }
+
+        .header-button {
+            background-color: var(--third-color);
+            width: 153px;
+            border-radius: 15px;
+            color: #2C2C2C;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            padding: 5px 7px;
+            font-weight: 600;
+            margin: 10px;
+        }
+
+
+        /* ICONS */
+
+        #icons-section {
+            background-color: var(--primary-color);
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 16px 10px 14px 10px;
+            box-shadow: 0px 3px 6px #00000029;
+        }
+
+        .single-icon {
+            max-width: 80px;
+            max-height: 80px;
+        }
+
+        /* project  */
+        #project-section {
+            width: 100vw;
+            height: 500px;
+            background-color: #EBFEFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* footer area */
+
+        .image-area {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            padding: 10px 15px;
+            min-height: 200px;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--third-color);
+        }
+
+        .image-item {
+            display: flex;
+            margin: 15px;
+            width: 140px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Copyright-area */
+
+
+        #Copyright-area {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+            padding: 0 35px;
+            background-color: black;
+            border-bottom: 5px solid var(--third-color);
+            align-items: center;
+        }
+
+        .left-copyright {
+            color: var(--third-color);
+        }
+
+        .right-copyright {
+            color: var(--third-color);
+        }
+
+
+
+        /* MEDIA QUERIES */
+
+        @media(max-width: 950px) {
+
+            /* footer */
+            .image-area {
+                padding-right: 20px;
+            }
+        }
+
+        @media(max-width: 820px) {
+
+            /* nav */
+            .nav-item {
+                margin: 0 10px;
+                width: 100vw;
+                background: red;
+                text-align: -webkit-center;
+                height: 40px;
+                font-size: 30px;
+            }
+
+            .logo-image {
+                display: none;
+            }
+
+            .nav-items {
+                display: none;
+                margin-top: 92px;
+
+            }
+
+
+            .nav-burger {
+                display: flex;
+                flex-direction: column;
+                margin-right: 5px;
+                transition: all 0.5s ease;
+            }
+
+            .nav-burger.open {
+                transform: rotate(90deg);
+            }
+
+            .nav-burger .line {
+                background-color: var(--third-color);
+                width: 30px;
+                margin: 3px;
+                height: 4px;
+            }
+
+
+
+
+            .sidebar-list {
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                list-style: none;
+                background-color: #1da1a8e0;
+                position: fixed;
+                right: -100%;
+                top: 80px;
+                transition: all 0.5s ease;
+            }
+
+            .sidebar-list.open {
+                right: 0;
+            }
+
+            .sidebar-item {
+                margin: 10px;
+                font-size: 24px;
+            }
+
+            .sidebar-item a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+            /* project-sction */
+
+            .project-image {
+                width: 500px;
+            }
+
+
+        }
+
+        @media(max-width: 550px) {
+
+            /* nav */
+            .nav-item {
+                font-size: 16px;
+                margin: 0 6px;
+            }
+
+            .logo-title {
+                font-size: 16px;
+            }
+
+            /* header */
+            .header-title {
+                font-size: 46px;
+            }
+
+            .header-text {
+                font-size: 15px;
+            }
+
+            .header-button {
+                margin: 50px 0 0 0;
+            }
+
+            /* header */
+            .about-title {
+                font-size: 25px;
+            }
+
+            .about-text {
+                font-size: 15px;
+            }
+
+            /* icons */
+            .single-icon {
+                max-width: 46px;
+                max-height: 46px;
+            }
+
+            /* project-sction */
+
+            .project-image {
+                width: 300px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav-container">
+        <div class="logo-container">
+            <img class="logo-image" src="../../images/profile-image@2x.png" alt="logo">
+            <h3 class="logo-title">Sahar Dagan</h3>
+        </div>
+        <ul class="nav-items">
+
+            <li class="nav-item"><a href="#about-section">אודות</a></li>
+            <li class="nav-item"><a href="#projects-section">שירותים</a></li>
+            <li class="nav-item"><a href="#contact-area">צור קשר</a></li>
+            <li class="nav-item"><a href="/index.html">ראשי</a></li>
+        </ul>
+        <div class="nav-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="sidebar-list">
+            <li class="sidebar-item"><a href="#main-section">ראשי</a></li>
+            <li class="sidebar-item"><a href="#about-section">אודות</a></li>
+            <li class="sidebar-item"><a href="#projects-section">שירותים</a></li>
+            <li class="sidebar-item"><a href="#contact-area">צור קשר</a></li>
+        </ul>
+    </nav>
+
+    <header class="main-header-container" id="main-section">
+        <div class="header-title">תיק עבודות</div>
+        <p class="header-text">לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה,
+            בתחום הדפוס, ההדפסה והפרסום. למשל:
+            לורםלורם איפסום או בקיצור לי.</p>
+        <div class="header-buttons">
+            <a class="header-button" href="">להורדת הפרויקט</a>
+            <a class="header-button" href="/js-project/1ProjectOneClock/ClockPage/index1.html" target="_blank">לצפייה
+                בפרויקט</a>
+        </div>
+    </header>
+
+    <section id="icons-section">
+        <img class="single-icon" src="../../images/img-API@2x.png" alt="">
+        <img class="single-icon" src="../../images/img-Bootstrap@2x.png" alt="">
+        <img class="single-icon" src="../../images/img-CSS@2x.png" alt="">
+        <img class="single-icon" src="../../images/img-TypeScript@2x.png" alt="">
+    </section>
+    <section id="project-section">
+        <img src="/js-project/1ProjectOneClock/ClockPage/הורדה.jpeg" class="project-image" style="
+        width: 628px;
+    ">
+    </section>
+    <section id="Copyright-area">
+        <p class="left-copyright">sahar dagan</p>
+        <p class="right-copyright">כל הזכויות שמורות</p>
+    </section>
+    <script>
+        const navBurger = document.querySelector(".nav-burger");
+        const sideBar = document.querySelector(".sidebar-list");
+
+        navBurger.addEventListener("click", function () {
+            navBurger.classList.toggle("open");
+            sideBar.classList.toggle("open");
+        })
+    </script>
+</body>
+
+</html>
