@@ -99,6 +99,83 @@ body {
 
 /* HEADER */
 
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #9e0000;
+}
+
+.accessibility-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding: 20px;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.close-btn {
+    align-self: flex-end;
+    background-color: transparent;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+.high-contrast {
+    background-color: black;
+    color: white;
+}
+
+.color-blind {
+    filter: grayscale(100%);
+}
+
+.increase-font {
+    font-size: 1.5em;
+}
+
+.reduce-brightness {
+    background-color: #222;
+    color: #ccc;
+}
+
+.change-font {
+    font-family: 'Courier New', monospace;
+}
+
+.underline-links a {
+    text-decoration: underline;
+}
+
 .main-header-container {
     position: relative;
     width: 100%;
@@ -314,6 +391,7 @@ body {
     align-items: center;
     padding: 100px 0 182px 0;
 }
+
 
 .projects-title {
     font-size: 36px;
