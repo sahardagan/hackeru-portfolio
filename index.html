@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/global.css">
+    <script defer src="scripts.js"></script>
     <title>Sahar Portfolio</title>
 </head>
 
 <body>
     <nav class="nav-container">
         <div class="logo-container">
-            <img class="logo-image" src="/Sahar Small Image 2024-06-11.jpg" alt="logo">
+            <img class="logo-image" src="/images/WhatsApp Image 2024-06-13 at 17.31.32_56df8de7.jpg" alt="logo">
             <h3 class="logo-title">Sahar Dagan</h3>
         </div>
         <ul class="nav-items">
@@ -23,7 +24,7 @@
         </ul>
         <div class="nav-burger">
             <div class="line"></div>
-            <div class="line"></div>
+            <div class="line"></div>א
             <div class="line"></div>
         </div>
         <ul class="sidebar-list">
@@ -34,40 +35,81 @@
         </ul>
     </nav>
     <header class="main-header-container" id="main-section">
-        <div class="header-title">תיק עבודות</div>
-        <p class="header-text">לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה,
-            בתחום הדפוס, ההדפסה והפרסום. למשל:
-            לורםלורם איפסום או בקיצור לי.</p>
+        <div class="overlay"></div>
+        <video autoplay muted loop id="bg-video">
+            <source src="/9629254-hd_1920_1080_24fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <p class="header-text"><span id="animated-text">זה תיק העבודות שלי בו אני מציג עבודות אישיות שלי בפיתוח
+                    בתחום ה-full
+                    stack. הפרוייקטים כוללים פיתוח בקוד מלא צד לקוח וצד שרת.</span></p>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var element = document.getElementById('animated-text');
+                    var text = element.innerText;
+                    element.innerHTML = ''; // מנקה את הטקסט המקורי
+
+                    var index = 0;
+                    function type() {
+                        if (index < text.length) {
+                            element.innerHTML += text[index];
+                            index++;
+                            setTimeout(type, 50); // עיכוב של 100 מילישניות בין כל אות
+                        } else {
+                            setTimeout(function () {
+                                element.innerHTML = '';
+                                index = 0;
+                                type();
+                            }, 1000); // עיכוב של שנייה לפני שמתחילים מחדש
+                        }
+                    }
+
+                    type();
+                });
+            </script>
+        </div>
     </header>
     <section id="icons-section">
-        <img class="single-icon" src="./images/img-API@2x.png" alt="">
-        <img class="single-icon" src="./images/img-Bootstrap@2x.png" alt="">
-        <img class="single-icon" src="./images/img-CSS@2x.png" alt="">
-        <img class="single-icon" src="./images/img-ES6@2x.png" alt="">
-        <img class="single-icon" src="./images/img-HTML@2x.png" alt="">
-        <img class="single-icon" src="./images/img-JS@2x.png" alt="">
-        <img class="single-icon" src="./images/img-NodeJS@2x.png" alt="">
-        <img class="single-icon" src="./images/img-OOP@2x.png" alt="">
-        <img class="single-icon" src="./images/img-React@2x.png" alt="">
-        <img class="single-icon" src="./images/img-SASS@2x.png" alt="">
-        <img class="single-icon" src="./images/img-TypeScript@2x.png" alt="">
+        <video autoplay muted loop id="bg-video">
+            <source src="/vido/3130284-uhd_3840_2160_30fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <img class="single-icon" src="./images/api.jpg" alt="">
+        <img class="single-icon" src="./images/BootStrap.jpeg" alt="">
+        <img class="single-icon" src="./images/CSS.png" alt="">
+        <img class="single-icon" src="./images/ES6Red.png" alt="">
+        <img class="single-icon" src="./images/HTML.jpeg" alt="">
+        <img class="single-icon" src="./images/JS.png" alt="">
+        <img class="single-icon" src="./images/node.jpeg" alt="">
+        <img class="single-icon" src="./images/OOP.png" alt="">
+        <img class="single-icon" src="./images/REACT.png" alt="">
+        <img class="single-icon" src="./images/SASS.jpeg" alt="">
+        <img class="single-icon" src="./images/TYPESCRIPT.jpeg" alt="">
     </section>
     <section id="about-section">
-        <img class="profile-image" src="/Sahar Image 2024-06-11.jpg" style="width: 400px; height: 600px;;"
-            alt="profile-imageX2">
+        <img class="profile-image" src="/images/WhatsApp Image 2024-06-13 at 17.31.32_56df8de7.jpg" alt="תמונת פרופיל">
         <h1 class="about-title">קצת עלי</h1>
-        <p class="about-text">שמי סהר דגן, אני בן 30 מכפר-סבא, אני מתמחה בתחום בניית אתרים בתוכנת Elemntor ובקוד, מתמחה
-            בשפות
-            תכנות <br>(Java Script, HTML , CSS, BOOTSTRAP, SASS, TYPESCRIPT) באתר זה אני מציג פרוייקים אישיים שלי
-            בתחומים
-            אלו. אני רוצה להודות למכללת Hacker U ולמרצים של המכללה על שיעורים נהדרים ומאתגרים. התחביבים שלי
-            הם
-            ללכת לים, להיפגש עם חברים ומשחקי מחשב. שהות מהנה באתר
-        </p>
         <a class="cv-btn" href="#">להורדת קורות חיים</a>
-
-
     </section>
+
+    <!-- חלון הפופאפ -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>אודותיי</h2>
+            <p id="about-me">שמי סהר דגן, אני בן 30 מכפר-סבא, אני מתמחה בתחום בניית אתרים בתוכנת Elemntor ובקוד, מתמחה
+                בשפות
+                תכנות <br>(Java Script, HTML , CSS, BOOTSTRAP, SASS, TYPESCRIPT) באתר זה אני מציג פרוייקים אישיים שלי
+                בתחומים
+                אלו. אני רוצה להודות למכללת Hacker U ולמרצים של המכללה על שיעורים נהדרים ומאתגרים. התחביבים שלי
+                הם
+                ללכת לים, להיפגש עם חברים ומשחקי מחשב. שהות מהנה באתר</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
     <section id="projects-section">
         <h1 class="projects-title">עבודות נבחרות</h1>
         <p class="projects-text">לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה,
