@@ -248,7 +248,7 @@ button:hover {
 .header-text {
     max-width: 844px;
     color: #ffffffbd;
-    font-size: 20px;
+    font-size: 40px;
     text-align: center;
     font-weight: bold;
     padding: 0 15px;
@@ -317,6 +317,7 @@ button:hover {
     height: 138px;
     cursor: pointer;
     border-radius: 50%;
+    margin-top: 35px;
 }
 
 .modal {
