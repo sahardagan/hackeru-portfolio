@@ -98,6 +98,26 @@ body {
 }
 
 
+/* bottom area */
+
+#changeBackgroundButton {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 60px;
+    padding: 10px 20px;
+    font-size: 10px;
+    cursor: pointer;
+    position: fixed;
+    /* כדי שהכפתור יהיה דביק */
+    bottom: 10px;
+    /* מיקום הכפתור 10 פיקסלים מהחלק העליון של המסך */
+    right: 0px;
+    /* מיקום הכפתור 10 פיקסלים מהצד הימני של המסך */
+}
+
+
 /* HEADER */
 
 header {
@@ -297,6 +317,8 @@ button:hover {
     width: 138px;
     height: 138px;
     cursor: pointer;
+    opacity: 0.3;
+    border-radius: 50%;
 }
 
 .modal {
@@ -413,14 +435,6 @@ button:hover {
     grid-template-rows: repeat(2, 1fr);
     gap: 50px;
     margin: 70px 0;
-}
-
-.single-card {
-    box-shadow: 3px 3px 15px #00000029;
-    border-radius: 10px;
-    background-color: #fff;
-    max-width: 405px;
-    max-height: 518px;
 }
 
 .card-image-container {
