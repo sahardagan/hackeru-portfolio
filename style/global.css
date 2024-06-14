@@ -427,6 +427,58 @@ button:hover {
     padding: 0 10px;
 }
 
+.single-card {
+    width: 340px;
+    height: 300px;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    /* Ensure the button container does not overflow */
+}
+
+.card-image-container {
+    position: relative;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 10px;
+    /* Adjust this value to move the buttons up or down */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    /* Space between buttons */
+    opacity: 0;
+    /* Make buttons invisible initially */
+    transition: opacity 0.3s ease-in-out;
+    /* Smooth transition for appearance */
+}
+
+.card-image-container:hover .button-container {
+    opacity: 1;
+    /* Show buttons on hover */
+}
+
+.bottom-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.bottom-title {
+    text-align: center;
+    margin-top: 10px;
+}
+
 .cards-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
