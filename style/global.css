@@ -317,7 +317,6 @@ button:hover {
     width: 138px;
     height: 138px;
     cursor: pointer;
-    opacity: 0.3;
     border-radius: 50%;
 }
 
@@ -412,18 +411,18 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 0 182px 0;
+    padding: 100px 0 0px 0;
 }
 
 
 .projects-title {
     font-size: 36px;
-    color: var(--forth-color);
+    color: white;
 }
 
 .projects-text {
     font-size: 20px;
-    color: var(--forth-color);
+    color: white;
     text-align: center;
     max-width: 576px;
     padding: 0 10px;
@@ -441,9 +440,6 @@ button:hover {
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
-    margin-bottom: 20px;
-
-
 }
 
 .card-image {
@@ -674,7 +670,6 @@ button:hover {
 
     .single-card {
         width: 340px;
-        height: 480px;
     }
 
     .bottom-area>* {
