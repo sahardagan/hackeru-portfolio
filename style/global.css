@@ -101,6 +101,7 @@ body {
 /* bottom area */
 
 #changeBackgroundButton {
+    z-index: 3;
     text-align: center;
     display: flex;
     align-items: center;
