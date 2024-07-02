@@ -451,6 +451,20 @@ button:hover {
     padding: 100px 0 0px 0;
 }
 
+.background-section {
+    background-image: url('/images/clouds.jpg');
+    background-size: cover;
+    /* מכסה את כל האזור */
+    background-position: center;
+    /* ממרכז את התמונה */
+    background-repeat: no-repeat;
+    /* מונע חזרה של התמונה */
+    width: 100%;
+    /* רוחב מלא */
+    height: 300px;
+    /* גובה מותאם לפי הצורך */
+}
+
 
 .projects-title {
     font-size: 36px;
